@@ -54,7 +54,7 @@
 		}
 
 		public function testGetArrayLine(){
-			$this->assertEquals("&nbsp;|<span style='color: #81c98d'>  Trixie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>|<span style='color: #5553a5'>  Green&nbsp;</span>|<span style='color: #c70253'>  Earth&nbsp;&nbsp;&nbsp;</span>|<span style='color: #d6caa8'>  Flowers&nbsp;&nbsp;</span>|<br/>", getArrayLine($this->keys,$this->colors,$this->array[0],$this->array));
+			$this->assertEquals("|<span style='color: #81c98d'>  Trixie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>|<span style='color: #5553a5'>  Green&nbsp;</span>|<span style='color: #c70253'>  Earth&nbsp;&nbsp;&nbsp;</span>|<span style='color: #d6caa8'>  Flowers&nbsp;&nbsp;</span>|<br/>", getArrayLine($this->keys,$this->colors,$this->array[0],$this->array));
 		}
 
 		public function testGetColWidth(){
@@ -62,7 +62,8 @@
 		}
 
 		public function testGetTableHeading(){
-			$this->assertEquals("&nbsp;|<span style='color: #81c98d'>  Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>|<span style='color: #5553a5'>  Color&nbsp;</span>|<span style='color: #c70253'>  Element&nbsp;</span>|<span style='color: #d6caa8'>  Likes&nbsp;&nbsp;&nbsp;&nbsp;</span>|<br/>",getTableHeading($this->colors,$this->keys,$this->array));
+			$this->assertEquals("|<span style='color: #81c98d'>  Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>|<span style='color: #5553a5'>  Color&nbsp;</span>|<span style='color: #c70253'>  Element&nbsp;</span>|<span style='color: #d6caa8'>  Likes&nbsp;&nbsp;&nbsp;&nbsp;</span>|<br/>",getTableHeading($this->colors,$this->keys,$this->array));
 		}
+
 
 	}

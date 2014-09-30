@@ -71,7 +71,7 @@
 
 	function getArrayLine($keys, $colors, $array_line,$array){
 		//Returns an ascii table line from an array line
-		$line = '&nbsp;|';
+		$line = '|';
 		foreach ($keys as $position => $key){
 			$width = getColWidth($array,$key);
 			if( array_key_exists($key, $array_line)){
@@ -115,7 +115,7 @@
 
 	function getTableHeading($colors,$keys,$array){
 		//Returns the table heading line from a set of keys
-		$line = '&nbsp;|';
+		$line = '|';
 
 		foreach($keys as $position => $key){
 			$width = getColWidth($array,$key);
